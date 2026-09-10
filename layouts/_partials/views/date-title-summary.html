@@ -1,0 +1,51 @@
+{{ $item := .item }}
+{{ $page := .page }}
+{{ $summary := partial "functions/get_summary" $item }}
+{{ $summary =  $summary | page.RenderString }}
+{{ $displayDate := .item.Params.event_start | default .item.Date }}
+{{/* CUSTOM: pull in authors + journal name, same source data the citation
+     view uses, since this view otherwise shows only title/date/summary */}}
+{{ $pub := partial "functions/resolve_publication.html" $item }}
+<article class="md:grid md:grid-cols-4 md:items-start">
+  <div class="md:col-span-3 group relative flex flex-col items-start">
+    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+      <div
+        class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+      <a href="{{$item.RelPermalink}}"><span
+        class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span class="relative z-10">{{$item.Title}}</span></a>
+    </h2>
+    {{ with $item.Params.awards }}
+    <div class="relative z-10 mt-2">
+      {{ partial "components/award_badge.html" (dict "award" (index . 0) "page" $item "variant" "pill") }}
+    </div>
+    {{ end }}
+    {{/* CUSTOM: authors only here; journal name moved down to the date column */}}
+    {{ with $item.Params.authors }}
+    <p class="relative z-10 mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+      {{ partial "page_metadata_authors" $item }}
+    </p>
+    {{ end }}
+    {{/* CUSTOM: date + journal grouped together, mobile-only (desktop version is
+         the separate column below, kept together in one wrapper this time) */}}
+    <div class="md:hidden relative z-10 order-first mb-3 flex flex-col text-sm text-zinc-400 dark:text-zinc-500 pl-1">
+      <time datetime="{{ time.Format "2006-01" $displayDate }}">
+        {{ time.Format (site.Params.hugoblox.locale.date_format | default ":date_long") $displayDate }}
+      </time>
+      {{ with $pub.display_short }}<span class="italic">{{ . | markdownify }}</span>{{ end }}
+    </div>
+    {{ with $summary }}
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 line-clamp-3">{{ . }}</p>
+    {{ end }}
+    {{/* CUSTOM: "Read more" indicator removed per user request -- the whole
+         card is already a click target via the absolute-inset link above */}}
+  </div>
+  {{/* CUSTOM: date + journal grouped in one flex column so the journal name
+       stays attached to the date instead of being auto-placed onto a new grid
+       row (which happened when they were two separate grid items). */}}
+  <div class="mt-1 hidden md:flex md:flex-col relative z-10 order-first mb-3 text-sm text-zinc-400 dark:text-zinc-500">
+    {{ with $pub.display_short }}<span class="italic">{{ . | markdownify }}</span>{{ end }}
+    <time datetime="{{ time.Format "2006" $displayDate }}">
+      {{ time.Format (site.Params.hugoblox.locale.date_format | default ":date_short") $displayDate }}
+    </time>
+  </div>
+</article>

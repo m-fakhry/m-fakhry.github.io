@@ -1,0 +1,184 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# Tutorial: https://docs.hugoblox.com/tutorial/
+# ══════════════════════════════════════════════════════════════════════════════
+hugoblox:
+  schema: "2.0"
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # IDENTITY
+  # ──────────────────────────────────────────────────────────────────────────
+  identity:
+    name: "Mohamed Ghalwash"
+    organization: ""
+    type: person # person | organization | local_business
+    tagline: ""
+    description: "Mohamed Ghalwash personal academic website."
+    social:
+      twitter: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # THEME
+  # ──────────────────────────────────────────────────────────────────────────
+  theme:
+    mode: light # light, dark, system
+    pack: "default"
+    colors:
+      primary: "sky" # purple, slate, gray, zinc, neutral, stone, red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose
+      secondary: "neutral"
+      neutral: ""
+    colors_light: {}
+    colors_dark: {}
+    surfaces:
+      background: "#ffffff"
+      foreground: "#000000"
+      header:
+        background: ""
+        foreground: ""
+      footer:
+        background: ""
+        foreground: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # TYPOGRAPHY
+  # ──────────────────────────────────────────────────────────────────────────
+  typography:
+    pack: "academic"
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # LAYOUT
+  # ──────────────────────────────────────────────────────────────────────────
+  layout:
+    radius: "md"
+    spacing: "spacious"
+    avatar_shape: square # circle | square | rounded
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # HEADER
+  # ──────────────────────────────────────────────────────────────────────────
+  header:
+    style: navbar-simple # navbar | navbar-simple | minimal 
+    sticky: true 
+    align: center
+    search: false 
+    theme_toggle: false 
+    theme_picker: false
+    language_switcher: false
+    cta:
+      enable: false
+      text: ""
+      url: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # FOOTER
+  # ──────────────────────────────────────────────────────────────────────────
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # COPYRIGHT
+  # ──────────────────────────────────────────────────────────────────────────
+  copyright:
+    notice: "© Last update on {year}."
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # SEO
+  # ──────────────────────────────────────────────────────────────────────────
+  seo:
+    title: ""
+    ai:
+      allow:
+        - /
+      disallow: []
+      note: "Guidance for AI crawlers - customize to match your public content."
+      contact: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # CONTENT
+  # ──────────────────────────────────────────────────────────────────────────
+  content:
+    math:
+      enable: false 
+    toc:
+      enable: true
+    reading_time:
+      enable: true
+    citations:
+      style: apa
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # SEARCH
+  # ──────────────────────────────────────────────────────────────────────────
+  search:
+    enable: true
+    suggestions: []
+    quick_actions: []
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # COMMENTS
+  # ──────────────────────────────────────────────────────────────────────────
+  comments:
+    provider: "" 
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # ANALYTICS
+  # ──────────────────────────────────────────────────────────────────────────
+  analytics:
+    google:
+      measurement_id: ""
+    plausible:
+      domain: ""
+    fathom:
+      site_id: ""
+    pirsch:
+      site_id: ""
+    baidu:
+      site_id: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # VERIFICATION
+  # ──────────────────────────────────────────────────────────────────────────
+  verification:
+    google: ""
+    bing: ""
+    baidu: ""
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # REPOSITORY
+  # Source repo for "Edit this page" links -- update if the repo name differs
+  # ──────────────────────────────────────────────────────────────────────────
+  repository:
+    url: "https://github.com/m-fakhry/m-fakhry.github.io"
+    branch: main
+    content_dir: content
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # LOCALE
+  # ──────────────────────────────────────────────────────────────────────────
+  locale:
+    date_format: "Jan 2, 2006" 
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # PRIVACY
+  # ──────────────────────────────────────────────────────────────────────────
+  privacy:
+    enable: false 
+    anonymize_analytics: true
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # DEBUG
+  # ──────────────────────────────────────────────────────────────────────────
+  debug:
+    enable: false
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # PREMIUM
+  # ──────────────────────────────────────────────────────────────────────────
+  pro:
+    hide_attribution: false
+    affiliate_code: ""

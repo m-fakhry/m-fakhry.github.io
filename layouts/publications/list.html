@@ -1,0 +1,94 @@
+{{ define "main" }}
+
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</div>
+
+{{ $view := .Params.view | default "card" }}
+{{ $block := . }}
+
+{{/* CUSTOM: show every publication (not just one paginated page) so the
+     client-side filter below can search/filter across everything at once,
+     matching the old site's filter widget behavior. */}}
+{{ $allPages := .Pages.ByDate.Reverse }}
+{{ $config := dict
+  "columns" (.Params.columns | default 2)
+  "len" (len $allPages)
+  "fill_image" (.Params.fill_image | default true)
+  "show_date" (.Params.show_date | default true)
+  "show_read_time" (.Params.show_read_time | default true)
+  "show_read_more" (.Params.show_read_more | default true)
+}}
+
+{{/* CUSTOM: CSL publication_types -> display label, same mapping used
+     elsewhere on the site (e.g. the tags added for the portfolio filter). */}}
+{{ $typeLabels := dict
+  "paper-conference" "Conference paper"
+  "article-journal" "Journal article"
+  "article" "Preprint"
+  "report" "Report"
+  "book" "Book"
+  "chapter" "Book section"
+  "thesis" "Thesis"
+  "patent" "Patent"
+}}
+
+{{/* Collect the distinct types actually present, for the dropdown options */}}
+{{ $typesPresent := slice }}
+{{ range $allPages }}
+  {{ with .Params.publication_types }}
+    {{ $t := index . 0 }}
+    {{ if not (in $typesPresent $t) }}
+      {{ $typesPresent = $typesPresent | append $t }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* CUSTOM: this page always uses Alpine.js for the filter bar below,
+     regardless of whether any publication has author_notes set. */}}
+{{ $.Store.Set "has_alpine" true }}
+
+{{/* CUSTOM: filter bar -- dropdown by type, text box searches title/authors/tags */}}
+<div x-data="{ selectedType: 'all', query: '' }" class="w-full max-w-3xl mx-auto px-4 mb-8">
+  <div class="flex flex-col sm:flex-row gap-3">
+    <select x-model="selectedType"
+      class="rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-100 text-sm px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500">
+      <option value="all">{{ i18n "all" | default "All types" }}</option>
+      {{ range $typesPresent }}
+      <option value="{{ . }}">{{ index $typeLabels . | default . }}</option>
+      {{ end }}
+    </select>
+    <input type="text" x-model="query" placeholder="{{ i18n "search" | default "Search" }} by title, author, or tag..."
+      class="flex-1 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-100 text-sm px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500">
+  </div>
+
+  <div class="flex flex-col items-center">
+
+    {{ partial "functions/render_view" (dict "fragment" "start" "page" $block "item" . "view" $view "config" $config) }}
+
+    {{ range $index, $item := $allPages }}
+      {{ $pubType := "" }}
+      {{ with $item.Params.publication_types }}{{ $pubType = index . 0 }}{{ end }}
+      {{ $authorsText := "" }}
+      {{ with $item.Params.authors }}{{ $authorsText = delimit . " " }}{{ end }}
+      {{ $tagsText := "" }}
+      {{ with $item.Params.tags }}{{ $tagsText = delimit . " " }}{{ end }}
+      {{ $searchText := printf "%s %s %s" $item.Title $authorsText $tagsText }}
+      <div
+        data-pub-type="{{ $pubType }}"
+        data-pub-search="{{ lower $searchText }}"
+        x-show="(selectedType === 'all' || selectedType === $el.dataset.pubType) && (query === '' || $el.dataset.pubSearch.includes(query.toLowerCase()))"
+        class="w-full">
+        {{ partial "functions/render_view" (dict "page" . "item" . "view" $view "index" $index "config" $config) }}
+      </div>
+    {{ end }}
+
+    {{ partial "functions/render_view" (dict "fragment" "end" "page" $block "item" . "view" $view) }}
+
+  </div>
+</div>
+
+{{ end }}

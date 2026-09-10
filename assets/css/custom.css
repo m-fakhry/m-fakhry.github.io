@@ -1,0 +1,35 @@
+/* Reduce the large top padding on the homepage bio section */
+.resume-biography {
+  padding-top: 0rem !important;
+}
+
+@media (min-width: 1024px) {
+  .resume-biography {
+    padding-top: .5rem !important;
+    padding-bottom: 0rem !important;
+  }
+}
+
+/* Widen the gap between the avatar column and the bio/education column */
+@media (min-width: 768px) {
+  #about .resume-biography > .max-w-7xl > .grid {
+    column-gap: 5rem; /* was gap-8 = 2rem; try 2.5rem–4rem to taste */
+  }
+}
+
+/* Tighten the social-icon row under the homepage avatar */
+#about .resume-biography .flex.flex-wrap.justify-center.gap-4 {
+  gap: 0.5rem; /* was gap-4 = 1rem; try 0.25rem–0.75rem to taste */
+}
+
+/* Awards (features block) has larger built-in padding than Collection blocks */
+#awards > div {
+  padding-top: 1rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* Widen the Services section's markdown block (default is ~65ch, too
+   narrow for the PC Member / Ad-hoc Reviewer rows with long venue names) */
+#services .max-w-prose {
+  max-width: 56rem !important;
+}

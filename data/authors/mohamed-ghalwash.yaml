@@ -1,0 +1,206 @@
+schema: hugoblox/author/v1
+slug: mohamed-ghalwash
+is_owner: true
+name:
+  display: Mohamed Ghalwash
+  given: Mohamed
+  family: Ghalwash
+status:
+  icon: ☕️
+role: Associate Professor
+bio: 'Mohamed Ghalwash is an Associate Professor of Artificial Intelligence at Ain Shams University / Zewail City of Science, Technology, and Innovation.
+  Ghalwash is interested in developing machine learning and AI models for discovery of interpretable spatio-temporal patterns from complex events and exploiting their utilities in practical high impact real-world applications, focusing on analytics for healthcare, health behavior, decision support, and to support the generation of real world evidence from medical data, wearable devices and instrumented environments. He also has more than ten years of expertise in the software engineering industry, developing software that are currently being deployed, where he engaged in all phases of the project life cycle for the development of large business applications.
+  My long-term goal is to put my footprints in the field of pattern recognition through contribution of original ideas and translating those ideas to end applications and products.
+  '
+affiliations:
+- name: Ain Shams University
+  url: https://asu.edu.eg
+
+user_groups:
+- Researchers
+
+links:
+- icon: at-symbol
+  url: mailto:mohamed.fakhry@gmail.com
+- icon: brands/x
+  url: https://twitter.com/mo_ghalwash
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/mohamed-ghalwash-774906a2/
+- icon: brands/github
+  url: https://github.com/m-fakhry
+- icon: academicons/google-scholar
+  url: https://scholar.google.com/citations?user=EXFJTaUAAAAJ
+- icon: academicons/academia
+  url: https://temple.academia.edu/MohamedGhalwash
+- icon: academicons/researchgate
+  url: https://www.researchgate.net/profile/Mohamed-Ghalwash-2
+- icon: academicons/orcid
+  url: https://orcid.org/0000-0002-3169-4346
+- icon: academicons/scopus
+  url: https://www.scopus.com/authid/detail.uri?authorId=54415736300
+- icon: academicons/clarivate
+  url: http://www.webofscience.com/wos/author/record/F-8926-2014
+- icon: devicon/reactrouter
+  url: https://www.aminer.org/profile/mohamed-f-ghalwash/53f47239dabfaedf436739e5
+- icon: eye-solid
+  url: https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Mohamed.Ghalwash
+
+interests:
+- Artificial Intelligence
+- Machine Learning
+- Pattern Recognition
+- Explainability
+- Fairness
+- Bioinformatics
+- Health Informatics
+- Software Engineering
+
+education:
+- institution: Temple University, USA
+  summary: 'Thesis on _Interpretable Early Classification of Multivariate Time Series_. Supervised by [Prof Zoran Obradovic](https://dabi.temple.edu/zoran-obradovic/).'
+  degree: PhD in Machine Learning
+  start: 2009-08-01
+  end: 2013-08-01
+- institution: Ain Shams University, Egypt
+  degree: BSc in Pure Mathematics and Computer Science
+  start: 1994-09-01
+  end: 1998-06-01
+
+experience:
+- position: Associate Professor
+  company_name: School of Computational Sciences and Artificial Intelligence, Zewail City of Science, Innovation, and Technology
+  company_url: https://www.zewailcity.edu.eg/academics/schools/school/3
+  location: Giza, Egypt
+  date_start: 2025-09-01
+- position: Director of AI and R&D
+  company_name: Proteinea
+  company_url: https://www.proteinea.com/
+  location: Cairo, Egypt
+  date_start: 2023-08-01
+  date_end: 2024-08-01
+  summary: Proteinea is a TechBio employing proprietary AI models and computational tools to engineer next-gen antibodies with improved efficacy, safety and convenience
+- position: Senior Research Scientist
+  company_name: IBM T.J. Watson Research Center
+  company_url: https://research.ibm.com/people/mohamed-ghalwash
+  location: New York, NY USA
+  date_start: 2023-03-01
+  date_end: 2023-07-01
+  summary: IBM T.J. Watson Research Center is one of IBM's premier research facilities and a cornerstone of innovation in the tech industry. The center is renowned for its groundbreaking contributions to computer science, artificial intelligence, quantum computing, and materials science.
+- position: Associate Professor
+  company_name: Faculty of Science, Ain Shams University
+  company_url: https://asu2learn.asu.edu.eg/science/
+  location: Cairo, Egypt
+  date_start: 2023-02-01
+  summary: The faculty is one of the oldest and most prestigious scientific institutions in the region. Established in 1950, it has been a hub for academic excellence and research innovation.
+- position: Research Scientist
+  company_name: IBM T.J. Watson Research Center
+  company_url: https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Mohamed.Ghalwash
+  location: New York, NY USA
+  date_start: 2016-10-01
+  date_end: 2023-03-01
+  summary: IBM T.J. Watson Research Center is one of IBM's premier research facilities and a cornerstone of innovation in the tech industry. The center is renowned for its groundbreaking contributions to computer science, artificial intelligence, quantum computing, and materials science.
+- position: Research Assistant Professor
+  company_name: Center for Data Analytics and Biomedical Informatics, Temple University
+  company_url: https://dabi.temple.edu/
+  location: Philadelphia, PA USA
+  date_start: 2014-09-01
+  date_end: 2016-08-31
+  summary: The center is a leading research hub dedicated to advancing the fields of data science, biomedical informatics, and healthcare innovation.
+- position: Assistant Professor
+  company_name: Faculty of Science, Ain Shams University
+  company_url: https://asu2learn.asu.edu.eg/science/
+  location: Cairo, Egypt
+  date_start: 2014-06-15
+  date_end: 2023-01-31
+  summary: null
+- position: Postdoctoral Associate
+  company_name: Center for Data Analytics and Biomedical Informatics, Temple University
+  company_url: https://dabi.temple.edu/
+  location: Philadelphia, PA USA
+  date_start: 2013-09-01
+  date_end: 2014-08-31
+  summary: The center is a leading research hub dedicated to advancing the fields of data science, biomedical informatics, and healthcare innovation.
+- position: Research Assistant
+  company_name: Center for Data Analytics and Biomedical Informatics, Temple University
+  company_url: https://dabi.temple.edu/
+  location: Philadelphia, PA USA
+  date_start: 2011-09-01
+  date_end: 2013-08-31
+  summary: null
+- position: PhD Student
+  company_name: Department of Computer and Information Science, Temple University, USA
+  company_url: https://cis.temple.edu/
+  location: Philadelphia, PA USA
+  date_start: 2009-09-01
+  date_end: 2013-08-26
+  summary: "- Courses:\n  - CIS 8526: Machine Learning\n  - STAT 8003: Statistical Methods 1\n  - CIS 9616: Data Management\n  - CIS 9664: Knowledge Discovery and Data Mining\n  - CIS 8511: Programming Techniques\n  - CIS 8535: Probabilistic Graphical Models\n  - CIS 8525: Neural Computation\n- **Dissertation**:  _Interpretable Early Classification of Multivariate Time Series_ , August 2013.\n"
+- position: Technical Team Leader
+  company_name: Asset Technology Group
+  company_url: http://www.asset.com.eg
+  location: Cairo, Egypt
+  date_start: 2008-02-01
+  date_end: 2009-08-30
+  summary: Founded in 1991, ASSET Technology is committed to providing world-class Enterprise Document and Content Management products and services that maximizes the value of business information across the enterprise. This includes best-of-breed Content and Document Management, Business Process Automation, Records Management, Mobile Applications, eBusiness Solutions, Enterprise Portals as well as collaboration and compliance technologies.
+- position: Java Team Leader
+  company_name: Raya Software
+  company_url: http://www.rayasoftware.com
+  location: Cairo, Egypt
+  date_start: 2005-07-01
+  date_end: 2008-01-30
+  summary: Raya is one of the largest companies operating in information technology service, with the Headquarter in Egypt and regional offices in Saudi & UAE as well as satellite offices to serve operation in North Africa. Raya software is based on tracking record in e-solutions including Government solutions, Internet Portals, Intranet.
+- position: Software Developer and Instructor
+  company_name: Nile Soft
+  company_url: http://www.nilesoft.net
+  company_logo: ''
+  location: Cairo, Egypt
+  date_start: 2002-01-01
+  date_end: 2005-05-30
+  summary: NileSoft is a Software house with extensive experience in the area of banking and financial applications.
+- position: Java Instructor
+  company_name: Allied Soft
+  company_url: http://www.alliedsoft.net
+  company_logo: ''
+  location: Cairo, Egypt
+  date_start: 2001-01-01
+  date_end: 2001-08-31
+  summary: 'Allied Soft was created in direct response to provide, effectively and professionally, comprehensive services and support in the field of Information Technology.
+    - Working as an Instructor (Part Time), teaching Java, J2EE, UML, and OOAD (Object Oriented analysis and Design).
+    - Supervisor of more than one graduation projects ranging from desktop applications, networking applications to web applications implementing the 3 tiers architecture.
+    '
+- position: Teaching Assistant
+  company_name: Faculty of Science, Ain Shams University
+  company_url: https://asu2learn.asu.edu.eg/science/
+  location: Cairo, Egypt
+  date_start: 1998-09-01
+  date_end: 2009-08-30
+  summary: null
+
+skills:
+- name: Technical Skills
+  items:
+  - name: Python/Pytorch
+    description: ''
+    icon: code-bracket
+    level: 4.0
+  - name: Data Science
+    description: ''
+    icon: chart-bar
+    level: 5.0
+- name: Hobbies
+  color: '#eeac02'
+  color_border: '#f0bf23'
+  items:
+  - name: Tennis
+    description: ''
+    icon: person-simple-walk
+    level: 3.0
+  - name: Photography
+    description: ''
+    icon: camera
+    level: 4.0
+
+languages:
+- name: English
+  percent: 80
+- name: Arabic
+  percent: 100
