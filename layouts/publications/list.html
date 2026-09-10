@@ -47,9 +47,13 @@
   {{ end }}
 {{ end }}
 
-{{/* CUSTOM: this page always uses Alpine.js for the filter bar below,
-     regardless of whether any publication has author_notes set. */}}
-{{ $.Store.Set "has_alpine" true }}
+{{/* CUSTOM: load Alpine.js directly for this page's filter bar. We can't rely
+     on the site-wide has_alpine Store flag here -- <head> renders before this
+     "main" block runs, so setting that flag from here is always too late to
+     influence the head's decision. Loading it explicitly avoids that entirely. */}}
+{{ $alpine_js := resources.Get "dist/lib/alpinejs/cdn.min.js" }}
+{{ $alpine_js = $alpine_js | resources.Fingerprint "sha256" }}
+<script src="{{ $alpine_js.RelPermalink }}" integrity="{{ $alpine_js.Data.Integrity }}" defer></script>
 
 {{/* CUSTOM: filter bar -- dropdown by type, text box searches title/authors/tags */}}
 <div x-data="{ selectedType: 'all', query: '' }" class="w-full max-w-3xl mx-auto px-4 mb-8">
