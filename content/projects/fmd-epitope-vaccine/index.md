@@ -13,6 +13,7 @@ tags:
 grant_info:
   funder: STDF
   duration: "2026 - 2029"
+  budget: "2,700,000 LE"
   pi: Mohamed Hassan
   co_pis:
     - Mohamed Ghalwash

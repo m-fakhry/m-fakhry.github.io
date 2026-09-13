@@ -8,10 +8,11 @@ name:
 status:
   icon: ☕️
 role: Associate Professor
-bio: 'Mohamed Ghalwash is an Associate Professor of Artificial Intelligence at Ain Shams University / Zewail City of Science, Technology, and Innovation.
-  Ghalwash is interested in developing machine learning and AI models for discovery of interpretable spatio-temporal patterns from complex events and exploiting their utilities in practical high impact real-world applications, focusing on analytics for healthcare, health behavior, decision support, and to support the generation of real world evidence from medical data, wearable devices and instrumented environments. He also has more than ten years of expertise in the software engineering industry, developing software that are currently being deployed, where he engaged in all phases of the project life cycle for the development of large business applications.
-  My long-term goal is to put my footprints in the field of pattern recognition through contribution of original ideas and translating those ideas to end applications and products.
-  '
+bio: 'Mohamed Ghalwash is an Associate Professor of Artificial Intelligence at Ain Shams University and Zewail City of Science, Technology, and Innovation. His research focuses on interpretable machine learning for spatio-temporal pattern discovery, with applications in healthcare analytics, health behavior modeling, and decision support, drawing on prior research leadership at IBM and Temple University. He has supervised eight postgraduate students across Ain Shams University and Zewail City, with thesis topics spanning security applications, Bayesian structure learning, and explainable AI, and currently serves as co-PI on a three-year STDF-funded grant (2026–2029, 2,700,000 LE) developing AI-driven immunoinformatics approaches for Foot-and-Mouth Disease vaccine design. 
+      
+
+      Alongside his academic research, he brings more than ten years of software engineering leadership across senior roles at IBM, Proteinea, Raya Software, and Asset Technology Group, spanning technical team leadership, software architecture, and large-scale enterprise system delivery. This engineering background has also shaped his applied research, extending into machine learning for security and biotech domains, including cryptanalysis and AI-driven vaccine design.
+      '
 affiliations:
 - name: Ain Shams University
   url: https://asu.edu.eg
@@ -72,13 +73,14 @@ experience:
   company_url: https://www.zewailcity.edu.eg/academics/schools/school/3
   location: Giza, Egypt
   date_start: 2025-09-01
+  summary: Zewail City is a city of knowledge and innovation.
 - position: Director of AI and R&D
   company_name: Proteinea
   company_url: https://www.proteinea.com/
   location: Cairo, Egypt
   date_start: 2023-08-01
   date_end: 2024-08-01
-  summary: Proteinea is a TechBio employing proprietary AI models and computational tools to engineer next-gen antibodies with improved efficacy, safety and convenience
+  summary: Proteinea is a TechBio employing proprietary AI models and computational tools to engineer next-gen antibodies with improved efficacy, safety and convenience.
 - position: Senior Research Scientist
   company_name: IBM T.J. Watson Research Center
   company_url: https://research.ibm.com/people/mohamed-ghalwash
@@ -141,7 +143,7 @@ experience:
   date_start: 2008-02-01
   date_end: 2009-08-30
   summary: Founded in 1991, ASSET Technology is committed to providing world-class Enterprise Document and Content Management products and services that maximizes the value of business information across the enterprise. This includes best-of-breed Content and Document Management, Business Process Automation, Records Management, Mobile Applications, eBusiness Solutions, Enterprise Portals as well as collaboration and compliance technologies.
-- position: Java Team Leader
+- position: Java Team Leader / Java Architect 
   company_name: Raya Software
   company_url: http://www.rayasoftware.com
   location: Cairo, Egypt
@@ -155,15 +157,15 @@ experience:
   location: Cairo, Egypt
   date_start: 2002-01-01
   date_end: 2005-05-30
-  summary: NileSoft is a Software house with extensive experience in the area of banking and financial applications.
+  summary: Nile Soft is a Software house with extensive experience in the area of banking and financial applications.
 - position: Java Instructor
-  company_name: Allied Soft
+  company_name: Allied Consultant 
   company_url: http://www.alliedsoft.net
   company_logo: ''
   location: Cairo, Egypt
   date_start: 2001-01-01
   date_end: 2001-08-31
-  summary: 'Allied Soft was created in direct response to provide, effectively and professionally, comprehensive services and support in the field of Information Technology.
+  summary: 'Allied Consultant was created in direct response to provide, effectively and professionally, comprehensive services and support in the field of Information Technology.
     - Working as an Instructor (Part Time), teaching Java, J2EE, UML, and OOAD (Object Oriented analysis and Design).
     - Supervisor of more than one graduation projects ranging from desktop applications, networking applications to web applications implementing the 3 tiers architecture.
     '

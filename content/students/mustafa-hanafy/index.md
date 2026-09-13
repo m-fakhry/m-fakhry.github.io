@@ -1,5 +1,5 @@
 ---
-title: Mustafa Hanfy
+title: Mostafa Hanafy
 summary: Cryptanalysis using Machine Learning
 tags:
   - MSc
