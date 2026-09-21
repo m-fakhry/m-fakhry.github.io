@@ -5,7 +5,7 @@ tags:
   - MSc
 date: "2026-02-01"
 image:
-  focal_point: Top
+  focal_point: Center
 profile: false
 university: Faculty of Engineering - Ain Shams University
 ---
