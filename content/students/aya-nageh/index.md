@@ -5,7 +5,7 @@ tags:
   - MSc
 date: "2027-01-01"
 image:
-  focal_point: Top
+  focal_point: Center
 profile: false
 university: Zewail City
 ---
