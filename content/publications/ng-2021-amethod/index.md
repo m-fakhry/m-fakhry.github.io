@@ -8,6 +8,8 @@ authors:
 - Ying Li
 date: '2021-07-16'
 publishDate: '2025-02-12T18:46:57.719398Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:

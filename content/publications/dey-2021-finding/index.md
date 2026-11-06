@@ -6,6 +6,8 @@ authors:
 - Ping Zhang
 date: '2021-12-28'
 publishDate: '2025-02-12T18:46:57.102697Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:

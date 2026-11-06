@@ -7,6 +7,8 @@ authors:
 - Qinghuang Lin
 date: '2021-03-31'
 publishDate: '2025-02-12T18:46:57.304876Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:

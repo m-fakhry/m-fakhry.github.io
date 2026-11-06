@@ -8,6 +8,8 @@ authors:
 - Zachary Shahn
 date: '2019-12-30'
 publishDate: '2025-02-12T18:46:56.784247Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:

@@ -6,6 +6,8 @@ authors:
 - Eileen Koski
 date: '2020-11-05'
 publishDate: '2025-02-12T18:46:57.864864Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:

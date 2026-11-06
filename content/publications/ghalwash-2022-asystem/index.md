@@ -8,6 +8,8 @@ authors:
 - Daby Sow
 date: '2020-12-30'
 publishDate: '2025-02-12T18:46:57.523336Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:

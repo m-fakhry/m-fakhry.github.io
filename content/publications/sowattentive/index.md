@@ -9,6 +9,8 @@ authors:
 - Li-wei Lehmann
 date: '2019-01-01'
 publishDate: '2025-02-12T18:46:56.601790Z'
+publication_types:
+- patent
 tags:
 - Patent
 featured: false

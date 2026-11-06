@@ -6,6 +6,8 @@ authors:
 - Daby Sow
 date: '2021-12-21'
 publishDate: '2025-02-12T18:46:58.074195Z'
+publication_types:
+- patent
 publication:
   name: Google Patents
 tags:
